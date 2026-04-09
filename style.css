@@ -5,12 +5,13 @@ body {
   font: 100%/1.5 system-ui;
   max-width: 100ch;
   margin-inline: auto;
-  padding: 1;
+  padding: 1em;
+  accent-color: var(--color-accent)
 }
 
 nav {
   display: flex;
-  margin-bottom: auto;
+  margin-bottom: 1em;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: oklch(80% 3% 200);
@@ -26,5 +27,6 @@ nav a {
 
 nav a.current {
   border-bottom-width: 0.4em;
+  border-bottom-style: solid;
   padding-bottom: 0.2em;
 }
