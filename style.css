@@ -7,3 +7,8 @@ body {
   margin-inline: auto;
   padding: 1;
 }
+
+nav a.current {
+  font-weight: bold;
+  text-decoration: underline;
+}
