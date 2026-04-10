@@ -45,34 +45,27 @@ nav a:hover {
 form {
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-column: 1 / -1;
   gap: 1em;
+}
 
-  & label {
-    display: grid;
-    grid-template-columns: subgrid;
-    grid-column: 1 / -1;
-  }
-
-  & button {
-    grid-column: 1 / -1;
-  }
+form button {
+  grid-column: 1 / -1;
 }
 
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
   gap: 1em;
+}
 
-  & article {
-    display: grid;
-    grid-template-rows: subgrid;
-    grid-row: span 3;
-  }
+.projects article {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+}
 
-  & h2 {
-    margin: 0;
-  }
+.projects h2 {
+  margin: 0;
 }
 
 h1 {
@@ -84,38 +77,41 @@ h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
 }
 
-.resume {
-  & body {
+body.resume {
     font-family: Arial, sans-serif;
     margin: 40px;
     line-height: 1.5;
-  }
-  & h1 {
+}
+
+body.resume h1 {
     text-align: center;
     margin-bottom: 5px;
-  }
-  & .contact {
+}
+
+body.resume .contact {
     text-align: center;
     font-size: 14px;
     margin-bottom: 20px;
-  }
-  & h2 {
+}
+
+body.resume h2 {
     border-bottom: 1px solid #000;
     padding-bottom: 5px;
     margin-top: 25px;
-  }
-  & .entry {
+}
+
+body.resume .entry {
     margin-bottom: 15px;
-  }
-  & .entry-title {
+}
+
+body.resume .entry-title {
     font-weight: bold;
-    text-align: center;
-  }
-  & .entry-subtitle {
+}
+
+body.resume .entry-subtitle {
     font-style: italic;
-    text-align: center;
-  }
-  & ul {
+}
+
+body.resume ul {
     margin: 5px 0 10px 20px;
-  }
 }
