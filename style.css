@@ -51,6 +51,6 @@ form {
 }
 
 .projects {
-  display: contents;
+  display: grid;
   grid-template-columns: repeat(auto0fill, minmax(15em, 1fr));
 }
