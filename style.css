@@ -49,3 +49,8 @@ form {
   grid-column: 1 / -1;
   gap: 1em;
 }
+
+.projects {
+  display: contents;
+  grid-template-columns: repeat(auto0fill, minmax(15em, 1fr));
+}
