@@ -44,10 +44,17 @@ nav a:hover {
 
 label {
   display: block;
+  width: 100%;
+  box-sizing: border-box;
   margin-block: 0.5em;
 }
 
-input,
+input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 textarea {
   display: block;
   width: 100%;
