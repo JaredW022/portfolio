@@ -41,3 +41,22 @@ nav a:hover {
   border-bottom-color: var(--color-accent);
   padding-bottom: 0.2em;
 }
+
+label {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-block: 0.5em;
+}
+
+input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
