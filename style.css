@@ -77,41 +77,41 @@ h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
 }
 
-body.resume {
+.resume {
     font-family: Arial, sans-serif;
     margin: 40px;
     line-height: 1.5;
 }
 
-body.resume h1 {
+.resume h1 {
     text-align: center;
     margin-bottom: 5px;
 }
 
-body.resume .contact {
+.resume .contact {
     text-align: center;
     font-size: 14px;
     margin-bottom: 20px;
 }
 
-body.resume h2 {
+.resume h2 {
     border-bottom: 1px solid #000;
     padding-bottom: 5px;
     margin-top: 25px;
 }
 
-body.resume .entry {
+.resume .entry {
     margin-bottom: 15px;
 }
 
-body.resume .entry-title {
+.resume .entry-title {
     font-weight: bold;
 }
 
-body.resume .entry-subtitle {
+.resume .entry-subtitle {
     font-style: italic;
 }
 
-body.resume ul {
+.resume ul {
     margin: 5px 0 10px 20px;
 }
