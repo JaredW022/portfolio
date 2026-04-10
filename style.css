@@ -42,7 +42,7 @@ nav a:hover {
   padding-bottom: 0.2em;
 }
 
-label {
+/* label {
   display: block;
   width: 100%;
   box-sizing: border-box;
@@ -59,4 +59,9 @@ textarea {
   display: block;
   width: 100%;
   box-sizing: border-box;
+} */
+
+form {
+  display: grid;
+  grid-template-columns: auto 1fr;
 }
