@@ -52,5 +52,8 @@ document.body.insertAdjacentHTML(
 const select = document.querySelector('#color-scheme-select');
 
 select.addEventListener('change', () => {
-  document.documentElement.style.colorScheme = select.value;
+  document.documentElement.style.setProperty(
+    'color-scheme',
+    select.value
+  );
 });
