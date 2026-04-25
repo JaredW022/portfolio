@@ -1,13 +1,15 @@
 [
     {
-        "title": "Lorem ipsum dolor sit.",
+        "title": "Sweet but healthy? Evaluating Honey vs. Sugar in Recipes",
+        "year": 2026,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est quod eveniet iusto culpa explicabo cumque fuga impedit, neque recusandae, odio ipsa blanditiis ducimus itaque voluptatibus. Omnis nemo vitae deserunt sed."
+        "description": "Utilized real world recipe data (from Food.com) to compare nutritional values in Honey and Sugar desserts. Recipes were cleaned, accounting for missingness and filtered by ingredients to contain Sugar and Honey only desserts. Hypothesis tests, such as a permutation test, were used to assess whether this “halo effect” on honey was supported by measurable differences."
     },
     {
-        "title": "Fugit laborum sunt qui.",
+        "title": "League of Legends Analysis: Wards vs. Dragons",
+        "year": 2025,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Accusantium ea recusandae sed laudantium aliquid quas natus itaque vero ducimus est eum quisquam numquam vel dicta, totam quasi adipisci eius asperiores incidunt culpa reprehenderit iure sapiente. Dignissimos, dolor ipsum!"
+        "description": "Analyzed data from League of Legends World Championship (Worlds) games to analyze the relationship between the wards placed in a game, and the number of dragons that team secured. Cleaned data, assessing for missingness, and outliers; depicted visualizations on the initial data, demonstrating relationships between the two groups. Implemented a predictive algorithm, utilizing sklearn's Random Forests to estimate the number of dragons based on ward related data."
     },
     {
         "title": "Qui quod laudantium hic!",
