@@ -51,6 +51,15 @@ let query = '';
 
 let searchInput = document.querySelector('.searchBar');
 
+function setQuery(q) {
+    q = q.toLowerCase();
+
+    return projects.filter((project) => {
+        let values = Object.values(project).join('\n').toLowerCase();
+        return values.includes(q);
+    });
+}
+
 // Refactor all plotting into one function
 function renderPieChart(projectsGiven) {
   // re-calculate rolled data
@@ -81,12 +90,6 @@ function renderPieChart(projectsGiven) {
         svg.append('path')
         .attr('d', arc)
         .attr('fill', colors(idx));
-    });
-
-    newData.forEach((d, idx) => {
-        legend.append('li')
-        .attr('style', `--color:${colors(idx)}`)
-        .html(`<span class="swatch"></span> ${d.label} <em>(${d.value})</em>`);
     });
 }
 
