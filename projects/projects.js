@@ -112,8 +112,7 @@ function renderPieChart(projectsGiven) {
                 renderProjects(filtered, projectsContainer, 'h2');
             }
         });
-});
-z
+    });
 }
 
 renderPieChart(projects);
