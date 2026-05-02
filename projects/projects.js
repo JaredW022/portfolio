@@ -27,6 +27,6 @@ arcs.forEach((arc, idx) => {
   d3.select('#projects-pie-plot')
   .append('path')
   .attr('d', arc)
-  .attr('fill', colors[idx]);
+  .attr('fill', colors(idx));
 });
 
