@@ -126,3 +126,18 @@ h1, h2, h3, h4, h5, h6 {
 
   overflow: visible;
 }
+
+.legend .swatch {
+  width: 1em;
+  height: 1em;
+  background: var(--color);
+  display: inline-block;
+  aspect-ratio: 1 / 1;
+  border-radius: 3px;
+}
+
+.legend li {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
