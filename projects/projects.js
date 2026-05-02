@@ -117,11 +117,13 @@ function renderPieChart(projectsGiven) {
             legend.selectAll('li')
                 .attr('class', (_, idx) => idx === selectedIndex ? 'selected' : '');
 
+            let base = setQuery(currentQuery);
+
             if (selectedIndex === -1) {
-                renderProjects(projects, projectsContainer, 'h2');
+                renderProjects(base, projectsContainer, 'h2');
             } else {
                 let selectedLabel = newData[selectedIndex].label;
-                let filtered = projects.filter(p => p.year === selectedLabel);
+                let filtered = base.filter(p => p.year === selectedLabel);
                 renderProjects(filtered, projectsContainer, 'h2');
             }
         });
