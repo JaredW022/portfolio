@@ -10,6 +10,8 @@ const projectsContainer = document.querySelector('.projects');
 
 renderProjects(projects, projectsContainer, 'h2');
 
+let currentQuery = '';
+
 let arcGenerator = d3.arc()
     .innerRadius(0)
     .outerRadius(50);
@@ -41,6 +43,15 @@ function setQuery(q) {
         return values.includes(q);
     });
 }
+
+searchInput.addEventListener('input', (event) => {
+    currentQuery = event.target.value;
+
+    let filteredProjects = setQuery(currentQuery);
+
+    renderProjects(filteredProjects, projectsContainer, 'h2');
+    renderPieChart(filteredProjects);
+});
 
 let selectedIndex = -1;
 
@@ -80,11 +91,13 @@ function renderPieChart(projectsGiven) {
                 legend.selectAll('li')
                     .attr('class', (_, idx) => idx === selectedIndex ? 'selected' : '');
 
+                let base = setQuery(currentQuery);
+
                 if (selectedIndex === -1) {
-                    renderProjects(projects, projectsContainer, 'h2');
+                    renderProjects(base, projectsContainer, 'h2');
                 } else {
                     let selectedLabel = newData[selectedIndex].label;
-                    let filtered = projects.filter(p => p.year === selectedLabel);
+                    let filtered = base.filter(p => p.year === selectedLabel);
                     renderProjects(filtered, projectsContainer, 'h2');
                 }
             });
