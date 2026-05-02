@@ -112,5 +112,11 @@ arcs.forEach((arc, i) => {
     });
 });
 
-
+if (selectedIndex === -1) {
+  renderProjects(projects, projectsContainer, 'h2');
+} else {
+  let selectedLabel = newData[selectedIndex].label;
+  let filtered = projects.filter(p => p.year === selectedLabel);
+  renderProjects(filtered, projectsContainer, 'h2');
+}
 
