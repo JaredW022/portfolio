@@ -126,6 +126,7 @@ function renderPieChart(projectsGiven) {
                 let filtered = base.filter(p => p.year === selectedLabel);
                 renderProjects(filtered, projectsContainer, 'h2');
             }
+
         });
     });
 }
