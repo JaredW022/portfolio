@@ -14,11 +14,6 @@ let arcGenerator = d3.arc()
   .innerRadius(0)
   .outerRadius(50);
 
-// let arc = arcGenerator({
-//   startAngle: 0,
-//   endAngle: 2 * Math.PI,
-// });
-
 let data = [1, 2, 3, 4, 5, 5];
 
 let sliceGenerator = d3.pie();
