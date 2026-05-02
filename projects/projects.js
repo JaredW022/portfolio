@@ -79,7 +79,7 @@ function renderPieChart(projectsGiven) {
 
 renderPieChart(projects);
 
-searchInput.addEventListener('change', (event) => {
+searchInput.addEventListener('input', (event) => {
     let filteredProjects = setQuery(event.target.value);
 
     projectsContainer.innerHTML = '';
