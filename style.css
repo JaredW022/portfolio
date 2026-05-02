@@ -151,3 +151,9 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap;
   gap: 1em;
 }
+
+.pie-legend-container {
+  display: flex;
+  align-items: flex-start; /* or center */
+  gap: 2em;
+}
