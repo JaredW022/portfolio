@@ -157,3 +157,11 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   gap: 2em;
 }
+
+#projects-pie-plot:has(path:hover) path:not(:hover) {
+  opacity: 0.5;
+}
+
+#projects-pie-plot path {
+  transition: 300ms;
+}
