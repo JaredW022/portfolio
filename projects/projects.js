@@ -91,7 +91,7 @@ function renderPieChart(projectsGiven) {
                     .attr('class', (_, idx) => idx === selectedIndex ? 'selected' : '');
 
                 let base = setQuery(currentQuery);
-
+  
                 if (selectedIndex === -1) {
                     renderProjects(base, projectsContainer, 'h2');
                 } else {

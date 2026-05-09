@@ -177,3 +177,117 @@ h1, h2, h3, h4, h5, h6 {
 path {
   cursor: pointer;
 }
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 1rem 0;
+  border-top: 1px solid color-mix(in oklch, canvastext 30%, canvas 70%);
+  color: canvastext; /* automatically adapts */
+}
+
+.stats dt {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: color-mix(in oklch, canvastext 60%, canvas 40%);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+}
+
+.stats dd {
+  font-size: 2rem;
+  font-weight: 500;
+  color: canvastext; /* adapts automatically */
+  margin: 0;
+}
+
+/* Gridlines behind the chart */
+.gridlines line {
+  stroke: color-mix(in oklch, canvastext 20%, canvas 80%);
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+}
+
+/* Optional: hide the domain line for a cleaner look */
+.gridlines path {
+  stroke: none;
+}
+
+/* Info layout (dt/dd grid) */
+.info {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.25rem 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background: color-mix(in oklch, canvas 90%, canvastext 10%);
+  color: canvastext;
+  max-width: 300px;
+}
+
+.info dt {
+  font-size: 0.75rem;
+  font-weight: 600;
+  opacity: 0.7;
+  margin: 0;
+}
+
+.info dd {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Tooltip positioning */
+.tooltip {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+/* Circle hover animation */
+circle {
+  transition: 200ms;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+circle:hover {
+  transform: scale(1.5);
+}
+
+dl.info {
+  /* ... other styles ... */
+  transition-duration: 500ms;
+  transition-property: opacity, visibility;
+}
+
+dl.info[hidden]:not(:hover, :focus-within) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@keyframes marching-ants {
+  to {
+    stroke-dashoffset: -8; /* 5 + 3 */
+  }
+}
+
+.selection {
+  fill-opacity: 0.1;
+  stroke: black;
+  stroke-opacity: 0.7;
+  stroke-dasharray: 5 3;
+  animation: marching-ants 2s linear infinite;
+}
+
+circle.selected {
+  fill: #ff6b6b;
+  stroke: black;
+  stroke-width: 1.5px;
+}
