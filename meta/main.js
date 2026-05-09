@@ -312,4 +312,5 @@ function updateTooltipPosition(event) {
 let data = await loadData();
 let commits = processCommits(data);
 
+renderCommitInfo(data, commits)
 renderScatterPlot(data, commits);
