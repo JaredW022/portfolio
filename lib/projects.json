@@ -12,9 +12,9 @@
         "description": "Analyzed data from League of Legends World Championship (Worlds) games to analyze the relationship between the wards placed in a game, and the number of dragons that team secured. Cleaned data, assessing for missingness, and outliers; depicted visualizations on the initial data, demonstrating relationships between the two groups. Implemented a predictive algorithm, utilizing sklearn's Random Forests to estimate the number of dragons based on ward related data."
     },
     {
-        "title": "Qui quod laudantium hic!",
+        "title": "The World Is Getting Greener — But Momentum Is Uneven.",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Quas laboriosam sequi nihil quisquam aut provident sit! Fuga cum ad aliquam dolorem obcaecati eaque eveniet et impedit asperiores! Illum provident nemo, sequi voluptatem fugit non soluta. Amet, quod aliquid!"
+        "description": "Ultized NASA MODIS data to create an interactive visualization, allowing for comparison of vegetation across different regions and time periods within the Americas. Implemented scrollytelling to give statistics regarding the Amazon region."
     },
     {
         "title": "Rem fugit minima adipisci?",
