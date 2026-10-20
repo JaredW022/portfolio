@@ -125,60 +125,6 @@ h6 {
   font-family: inherit;
 }
 
-#projects-pie-plot {
-  max-width: 20em;
-  margin-block: 2em;
-
-  overflow: visible;
-}
-
-.legend li {
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
-}
-
-.legend .swatch {
-  width: 1em;
-  height: 1em;
-  background: var(--color);
-  display: inline-block;
-  border-radius: 3px;
-}
-
-.legend {
-  list-style: none;
-  padding: 1em;
-  margin-top: 1em;
-  border: 1px solid #ccc;
-
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-}
-
-.pie-legend-container {
-  display: flex;
-  align-items: center;
-  gap: 2em;
-}
-
-#projects-pie-plot:has(path:hover) path:not(:hover) {
-  opacity: 0.5;
-}
-
-#projects-pie-plot path {
-  transition: 300ms;
-}
-
-#projects-pie-plot .selected {
-  --color: oklch(60% 45% 0) !important;
-
-  &:is(path) {
-    fill: var(--color);
-  }
-}
-
 path {
   cursor: pointer;
 }
