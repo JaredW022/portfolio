@@ -1,12 +1,13 @@
 import { fetchJSON, renderProjects } from './global.js';
 // import { fetchGitHubData } from './global.js';
 
-const projects = await fetchJSON('./lib/projects.json');
-const latestProjects = projects.slice(0, 3);
-
 const projectsContainer = document.querySelector('.projects');
-
-renderProjects(latestProjects, projectsContainer, 'h2');
+try {
+  const projects = await fetchJSON('./lib/projects.json');
+  renderProjects(projects.slice(0, 3), projectsContainer, 'h3');
+} catch {
+  projectsContainer.textContent = 'Projects could not be loaded. Please refresh to try again.';
+}
 
 /*
 const githubData = await fetchGitHubData('jaredw022');

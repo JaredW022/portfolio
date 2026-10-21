@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jared Wang Resume</title>
+    <meta name="description" content="Jared Wang's education, experience, certifications, and awards.">
+    <title>Resume — Jared Wang</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="resume-page">
     <script src="global.js" type="module"></script>
     <!-- <nav>
         <a href="index.html">Home</a>
@@ -16,9 +17,16 @@
         <a href="resume.html">Resume</a>
     </nav> -->
 
+    <main id="main">
+    <header class="page-heading resume-heading">
+        <p class="eyebrow">The path so far</p>
+        <h1>Learning.<br><em>Doing. Growing.</em></h1>
+        <p>My education, experience, and the things I've picked up along the way.</p>
+        <button class="button print-button" type="button">Print / Save PDF <span aria-hidden="true">↗</span></button>
+    </header>
     <div class="resume">
 
-        <h1>Jared Wang</h1>
+        <h2 class="resume-name">Jared Wang</h2>
         <div class="contact">
             951-271-2546 |
             <a href="mailto:jaredjcwang@gmail.com">jaredjcwang@gmail.com</a> |
@@ -134,6 +142,10 @@
         </section>
 
     </div>
+    </main>
+    <script type="module">
+        document.querySelector('.print-button').addEventListener('click', () => window.print());
+    </script>
 
 </body>
 </html>
