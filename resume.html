@@ -3,149 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jared Wang's education, experience, certifications, and awards.">
+    <meta name="description" content="View or download Jared Wang's updated resume, including education, experience, projects, and technical skills.">
     <title>Resume — Jared Wang</title>
     <link rel="stylesheet" href="style.css">
+    <script src="global.js" type="module"></script>
 </head>
 <body class="resume-page">
-    <script src="global.js" type="module"></script>
-    <!-- <nav>
-        <a href="index.html">Home</a>
-        <a href="projects/index.html">Projects</a>
-        <a href="contact/index.html">Contact</a>
-        <a href="https://github.com/Jaredw022" target="_blank">GitHub</a>
-        <a href="resume.html">Resume</a>
-    </nav> -->
-
     <main id="main">
-    <header class="page-heading resume-heading">
-        <p class="eyebrow">The path so far</p>
-        <h1>Learning.<br><em>Doing. Growing.</em></h1>
-        <p>My education, experience, and the things I've picked up along the way.</p>
-        <button class="button print-button" type="button">Print / Save PDF <span aria-hidden="true">↗</span></button>
-    </header>
-    <div class="resume">
-
-        <h2 class="resume-name">Jared Wang</h2>
-        <div class="contact">
-            951-271-2546 |
-            <a href="mailto:jaredjcwang@gmail.com">jaredjcwang@gmail.com</a> |
-            <a href="https://linkedin.com/in/jared-wang-a64186307">LinkedIn</a> |
-            <a href="https://github.com/JaredW022">GitHub</a>
-        </div>
-
-        <h2>Education</h2>
-
-        <section>
-            <article>
-                <h3>Eleanor Roosevelt High School</h3>
-                <p>
-                    <time datetime="2020">2020</time> –
-                    <time datetime="2024">2024</time> | Eastvale, CA
-                </p>
-                <ul>
-                    <li>Activities: Wind Ensemble, Marching Band Saxophone Section Leader, Saxophone Quartet</li>
-                </ul>
-            </article>
-
-            <article>
-                <h3>University of California San Diego</h3>
-                <p>
-                    <time datetime="2024">2020</time> – Present | La Jolla, CA
-                </p>
-                <ul>
-                    <li>Activities: UC San Diego Archery Team</li>
-                </ul>
-            </article>
-        </section>
-
-        <h2>Experience</h2>
-
-        <section>
-            <article>
-                <h3>Assistant Coach</h3>
-                <p>Riverside Archery JOAD |
-                    <time datetime="2022-01">Janurary 2022</time> - 
-                    <time datetime="2024-01">Janurary 2024</time>
-                </p>
-                
-                <ul>
-                    <li>Provided feedback on the form of students</li>
-                    <li>Assisted in leading classes through warm-ups</li>
-                    <li>Managed the line to ensure safety</li>
-                </ul>
-            </article>
-
-            <article>
-                <h3>Saxophone Section Leader</h3>
-                <p>ERHS Marching Band | 
-                    <time datetime="2022-06">June 2022</time> - 
-                    <time datetime="2023-05">May 2023</time>
-                </p>
-                <ul>
-                    <li>Hosted and provided feedback through sectionals</li>
-                    <li>Provided reminders and coordination for section members</li>
-                </ul>
-            </article>
-        </section>
-
-        <h2>Certifications</h2>
-
-        <section>
-            <article>
-                <h3>Level 2 USA Archery Coach</h3>
-                <p>Issued 
-                    <time datetime="2025-01">Jan. 2025</time>
-                </p>
-                <ul>
-                    <li>Completed training in archery rules, safety, range setup, equipment, and National Training System techniques</li>
-                </ul>
-            </article>
-
-            <article>
-                <h3>California Seal of Biliteracy</h3>
-                <ul>
-                    <li>Scored 4s on AP Spanish Language and Literature exams; passed California English standards test</li>
-                </ul>
-            </article>
-        </section>
-
-        <h2>Awards</h2>
-
-        <section>
-            <article>
-                <h3>All State Honor Band</h3>
-                <p>Sophomore–Senior Year</p>
-                <ul>
-                    <li>Selected via blind audition; Concert Band (10–11), Symphonic Band (12)</li>
-                </ul>
-            </article>
-
-            <article>
-                <h3>Pacific Symphony Youth Wind Ensemble</h3>
-                <p>Senior Year</p>
-                <ul>
-                    <li>Earned position in alto saxophone section through audition</li>
-                </ul>
-            </article>
-
-            <article>
-                <h3>California Beach Cup – 2nd Place</h3>
-                <p>
-                    <time datetime="2021">2021</time>, 
-                    <time datetime="2023">2023</time>
-                </p>
-                <ul>
-                    <li>Qualified and competed in elimination rounds (Cadet division)</li>
-                </ul>
-            </article>
-        </section>
-
-    </div>
+        <header class="resume-toolbar">
+            <h1>My Resume<span class="accent"></span></h1>
+            <div class="resume-actions">
+                <a class="button" href="documents/Jared_Resume.pdf" download="Jared_Resume.pdf">Download resume <span aria-hidden="true">↓</span></a>
+                <a class="text-link" href="documents/Jared_Resume.pdf" target="_blank" rel="noopener noreferrer">Open PDF <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+            </div>
+        </header>
+        <object class="resume-pdf" data="documents/Jared_Resume.pdf#view=FitH&navpanes=0" type="application/pdf" aria-label="Jared Wang's resume PDF">
+            <p>Your browser cannot display this PDF inline. <a href="documents/Jared_Resume.pdf">Open the resume</a> or use the download link above.</p>
+        </object>
     </main>
-    <script type="module">
-        document.querySelector('.print-button').addEventListener('click', () => window.print());
-    </script>
-
 </body>
 </html>

@@ -7,7 +7,7 @@ const pages = [
     // { url: 'about/', title: 'About Me' },
     // { url: 'https://github.com/Jaredw022', title: 'GitHub' },
     // { url: 'meta/', title: 'Meta' },
-    { url: 'resume.html', title: 'Resume' }
+    // { url: 'resume.html', title: 'Resume' }
 ];
 
 const header = document.createElement('header');
